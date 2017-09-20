@@ -23,10 +23,10 @@ L=bwlabel(M);
 
 %define the features/thresholds of objects that are cilia-like
 MinArea=PARAMS.MinArea;
-MaxArea=200;
+MaxArea=PARAMS.MaxArea;
 %eccentricity represents an object's deviation from being a circle
 MaxEccentricity=.9999;
-MinEccentricity=.85;
+MinEccentricity=PARAMS.MinEccentricity;
 %how filled in is the object?
 MinSolidity=.6;
 %how bright is the brightest pixel?
