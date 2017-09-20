@@ -5,7 +5,9 @@ cd('replace_with_path_to_folder_with_Leica_file');
 %PARAMETERS that can be altered based on the imaging
 PARAMS.Threshold=95;%This is the threshold for considering a pixel as signal or noise in the cilia staining channel
 PARAMS.MinMax=190; %This is the threshold for the minimum maximum intensity value for a potential "cilium" object to be considered as a true cilium
-PARAMS.MinArea=21;%This is the threshold for the minimum area for a potential-cilium" object to be considered as a true cilium
+PARAMS.MinArea=21;%This is the threshold for the minimum area for a potential-cilium" object to be considered as a true cilium. This may have to change based on the cilium-shape and resolution of the image.
+PARAMS.MaxArea=200;%This is the threshold for the maximum area for a potential-cilium" object to be considered as a true cilium. This may have to change based on the cilium-shape and resolution of the image.
+PARAMS.MinEccentricity=.85; %This is the threshold for the minimum eccentricity for a cilium object. This threshold may change depending on the cilium-shape in different cell lines/types.
 %Specify the order of the images in the Leica (.lif) file
 PARAMS.dapiNum=1; %to specify the position of the DAPI channel
 PARAMS.ciliaNum=4; %to specify the position of the cilia-marker channel
