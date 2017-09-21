@@ -5,7 +5,7 @@
 function [fields]=get_max_z_projections(leicaFile, PARAMS)
 
 %add path to bio-formats folder
-addpath('/Applications/MATLAB/MATLAB_Compiler_Runtime/v717/toolbox/bfmatlab/');
+addpath('Replace_with_path_to_bfmatlab_toolbox');
 
 %read in the Leica imaging file
 data = bfopen(leicaFile);

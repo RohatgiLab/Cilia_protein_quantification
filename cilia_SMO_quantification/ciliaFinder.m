@@ -1,5 +1,5 @@
-%specify the directory you would like to work in/have your files output to
-cd('replace_with_path_to_folder_with_Leica_file');
+%specify the path to the directory holding the scripts from the "cilia_SMO_quantification" folder
+cd('replace_with_path_to_the_scripts_from cilia_SMO_quantification_folder');
 
 %PARAMETERS that can be altered based on the imaging
 PARAMS.Threshold=95;%This is the threshold for considering a pixel as signal or noise in the cilia staining channel
